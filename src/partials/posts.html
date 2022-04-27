@@ -1,0 +1,67 @@
+<section class="posts">
+  <div class="posts__wrapper container">
+    <h2 class="posts__title title-section title-section--center">Интересно пишем про</h2>
+    <ul class="posts__list list-reset">
+      <li class="posts__item">
+        <article class="post post">
+          <div class="post__img-wrapper post__img-wrapper--bg">
+            @include('template/picture.html', {
+            'pathImg': './img/posts/img-post1',
+            'imgType': 'jpg',
+            'classImgName': 'post__img',
+            'width': '280',
+            'height': '300',
+            'alt': '',
+            'tablet': '',
+            'desktop': '',
+            })
+          </div>
+          <time class="post__date" datetime="2020-05-28">28.05.2020</time>
+          <h3 class="post__title">
+            <a class="post__link" href="#">Заголовок короткий в две строки</a>
+          </h3>
+        </article>
+      </li>
+      <li class="posts__item">
+        <article class="post post">
+          <div class="post__img-wrapper post__img-wrapper--bg">
+            @include('template/picture.html', {
+            'pathImg': './img/posts/img-post2',
+            'imgType': 'jpg',
+            'classImgName': 'post__img',
+            'width': '280',
+            'height': '300',
+            'alt': '',
+            'tablet': '',
+            'desktop': '',
+            })
+          </div>
+          <time class="post__date" datetime="2020-05-28">28.05.2020</time>
+          <h3 class="post__title">
+            <a class="post__link" href="#">Заголовок короткий в две строки</a>
+          </h3>
+        </article>
+      </li>
+      <li class="posts__item only-desktop">
+        <article class="post post">
+          <div class="post__img-wrapper post__img-wrapper--bg">
+            @include('template/picture.html', {
+            'pathImg': './img/posts/img-post1',
+            'imgType': 'jpg',
+            'classImgName': 'post__img',
+            'width': '280',
+            'height': '300',
+            'alt': '',
+            'tablet': '',
+            'desktop': '',
+            })
+          </div>
+          <time class="post__date" datetime="2020-05-28">28.05.2020</time>
+          <h3 class="post__title">
+            <a class="post__link" href="#">Заголовок короткий в две строки Заголовок короткий в две строки</a>
+          </h3>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>

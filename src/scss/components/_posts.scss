@@ -1,0 +1,47 @@
+.posts {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  @include tablet {
+    padding-top: 35px;
+    padding-bottom: 56px;
+  }
+
+  @include desktop {
+    padding-top: 38px;
+    padding-bottom: 44px;
+  }
+}
+
+.posts__wrapper {
+}
+
+.posts__title {
+  margin-bottom: 25px;
+
+  @include tablet {
+    margin-bottom: 42px;
+  }
+
+  @include desktop {
+    margin-bottom: 32px;
+  }
+}
+
+.posts__list {
+  display: grid;
+  column-gap: 25px;
+  row-gap: 10px;
+
+  @include small-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    column-gap: 55px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.posts__item {
+}

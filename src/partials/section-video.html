@@ -1,0 +1,25 @@
+<section class="section-video">
+  <div class="section-video__wrapper container">
+    <h2 class="section-video__title title-section title-section--center">Познакомимся в живую?</h2>
+    <div class="section-video__item video">
+      <div class="video__wrapper video__wrapper--bg">
+        @include('template/picture.html', {
+        'pathImg': './img/videos/video-img1',
+        'imgType': 'jpg',
+        'classImgName': 'video__img',
+        'width': '',
+        'height': '',
+        'alt': '',
+        'tablet': '768',
+        'desktop': '992',
+        })
+        <button class="video__btn">
+          <svg class="video__btn-icon icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#play"></use>
+          </svg>
+        </button>
+        <video class="video__tag" src=""></video>
+      </div>
+    </div>
+  </div>
+</section>

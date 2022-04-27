@@ -1,0 +1,283 @@
+// .promo {
+//   counter-reset: section;
+//   position: relative;
+//   background-color: var(--color-bg-light-secondary);
+// }
+
+// .promo__header {
+//   position: relative;
+// }
+
+// .promo__headline {
+//   position: absolute;
+//   left: 0;
+//   z-index: 10;
+//   margin: 0;
+//   padding-top: 94px;
+//   padding-right: 20px;
+//   padding-left: 20px;
+// }
+
+// .promo__heading {
+//   margin: 0;
+//   margin-bottom: 10px;
+// }
+
+// .promo__list {
+// }
+
+// .promo__wrapper {
+//   padding-top: 237px;
+//   padding-bottom: 147px;
+// }
+
+// .promo__item {
+// }
+
+// .promo__cover {
+//   position: absolute;
+//   top: 0;
+//   z-index: -1;
+//   width: 100%;
+// }
+
+// .promo__title {
+//   margin: 0;
+//   margin-bottom: 8px;
+// }
+
+// .promo__text {
+//   overflow: hidden;
+//   margin: 0;
+//   min-height: 126px;
+// }
+
+// .promo__btn {
+
+// }
+
+// .promo__bottom {
+//   position: absolute;
+//   bottom: 0;
+//   z-index: inherit;
+//   height: 96px;
+// }
+
+// .swiper-pagination-circle {
+//   position: absolute;
+//   left: 50%;
+//   bottom: 0;
+//   z-index: 1;
+//   transform: translateX(-50%);
+// }
+
+.promo {
+  counter-reset: section;
+  position: relative;
+}
+
+.promo__header {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.promo__heading {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 22px;
+  font-family: $font-family-secondary;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 26px;
+
+  @include tablet {
+    margin-bottom: 24px;
+    max-width: 350px;
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  @include desktop {
+    max-width: 100%;
+    font-size: 40px;
+  }
+}
+
+.promo__item {
+  position: relative;
+  overflow: hidden;
+  padding-top: 165px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+
+  @include tablet {
+    padding-top: 235px;
+    padding-bottom: 130px;
+  }
+}
+
+.promo__img {
+  position: absolute;
+  right: -100px;
+  top: 15px;
+  z-index: -1;
+
+  @include small-tablet {
+    top: 0;
+    width: auto;
+    height: 540px;
+  }
+
+  @include tablet {
+    right: -25px;
+  }
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+
+  @include tablet {
+    margin-bottom: 21px;
+    font-size: 24px;
+  }
+
+  @include desktop {
+    margin-bottom: 14px;
+  }
+}
+
+.promo__text {
+  margin: 0;
+  height: 150px;
+  max-width: 205px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+
+  @include tablet {
+    height: 134px;
+    max-width: 324px;
+    font-size: 16px;
+  }
+}
+
+.promo__footer {
+  position: absolute;
+  bottom: 13px;
+  z-index: 10;
+  width: 100%;
+
+  @include tablet {
+    bottom: 17px;
+  }
+
+  @include desktop {
+    left: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      display: block;
+    }
+  }
+}
+
+.promo__btn {
+  margin-bottom: 26px;
+  width: 260px;
+
+  @include tablet {
+    margin-bottom: 45px;
+  }
+}
+
+.swiper-pagination-circle {
+  text-align: center;
+
+  &.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 12px;
+    border: 2px solid #1064e5;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 1;
+  }
+
+  &.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: #1064e5;
+  }
+}
+
+.swiper-pagination-number {
+  display: flex;
+  align-items: center;
+
+  .swiper-pagination-bullet {
+    position: relative;
+    border-radius: 0;
+    padding: 12px;
+    width: auto;
+    height: auto;
+    font-family: $font-family;
+    font-size: 14px;
+    background-color: transparent;
+    opacity: 1;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    &::before {
+      counter-increment: section;
+      content: counter(section);
+      font-weight: 500;
+      line-height: 130%;
+      color: inherit;
+      opacity: 0.6;
+    }
+
+    + .swiper-pagination-bullet {
+      margin-left: 40px;
+    }
+
+    &-active {
+      font-size: 18px;
+
+      @include tablet {
+        font-size: 24px;
+      }
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -16px;
+      top: 50%;
+      width: 16px;
+      height: 2px;
+      background-color: #1064e5;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+  }
+
+  &.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
+    margin-right: 16px;
+  }
+}

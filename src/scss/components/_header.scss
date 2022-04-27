@@ -1,0 +1,267 @@
+.header {
+  background-color: transparent;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.header__logo {
+}
+
+.logo {
+  display: block;
+
+  @include desktop {
+    width: 130px;
+  }
+}
+
+.logo__img {
+  display: block;
+
+  @include tablet {
+    width: 130px;
+    height: 40px;
+  }
+}
+
+.header__burger {
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.header__burger-icon {
+}
+
+.header__nav {
+}
+
+.offcanvas {
+  position: fixed;
+  bottom: 0;
+  z-index: 1045;
+  display: flex;
+  flex-direction: column;
+  outline: 0;
+  max-width: 100%;
+  background-clip: padding-box;
+  background-color: #fff;
+  visibility: hidden;
+  transition: transform 0.3s ease-in-out;
+
+  @include desktop {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    visibility: visible;
+  }
+}
+
+.offcanvas-end {
+  top: 0;
+  right: 0;
+  border: none;
+  width: 100%;
+  max-width: 450px;
+
+  @include desktop {
+    width: auto;
+    max-width: 100%;
+    transform: translateX(0);
+  }
+}
+
+.nav {
+  overflow-y: auto;
+  padding: 25px 20px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+
+  @include tablet {
+    padding: 35px 43px 35px 58px;
+    font-size: 18px;
+  }
+
+  @include desktop {
+    overflow-y: inherit;
+    padding: 0;
+    font-size: 14px;
+    background-color: transparent;
+  }
+}
+
+.nav__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 13px;
+
+  @include tablet {
+    padding-bottom: 25px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.nav__close {
+}
+
+.nav__close-icon {
+  @include tablet {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.nav__phones {
+  margin-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include tablet {
+    padding-top: 23px;
+  }
+
+  @include desktop {
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  a {
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    white-space: nowrap;
+    color: inherit;
+
+    @include desktop {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+  }
+}
+
+.nav__list {
+  margin-bottom: 35px;
+
+  @include desktop {
+    display: flex;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.site-menu {
+
+}
+
+.site-menu__item {
+  & + & {
+    @include desktop {
+      margin-left: 15px;
+    }
+  }
+}
+
+.site-menu__link {
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: inherit;
+
+  &--drop {
+    margin: 0;
+    min-width: 226px;
+  }
+}
+
+.site-menu__submenu {
+}
+
+.nav__user {
+  margin-bottom: 15px;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
+  @include desktop {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+}
+
+.user-menu {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 28px;
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--color-border);
+    padding-top: 33px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.user-menu__item {
+  & + & {
+    margin-top: 20px;
+
+    @include tablet {
+      margin-top: 0;
+      margin-left: 44px;
+    }
+
+    @include desktop {
+      margin-left: 24px;
+    }
+  }
+}
+
+.user-menu__link {
+  width: 100%;
+}
+
+.nav__lang {
+  display: flex;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.nav__lang-link {
+  margin-right: 40px;
+  color: inherit;
+
+  @include desktop {
+    margin-right: 0;
+  }
+}

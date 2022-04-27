@@ -1,0 +1,30 @@
+$font-family: "IBM Plex Sans", sans-serif;
+$font-family-secondary: "IBM Plex Serif", serif;
+
+// colors
+:root {
+  // color text
+  --color-text: #061224;
+  --color-text-hover: #1064e5;
+  --color-text-secondary: #fff;
+
+  // colors bg
+  --color-bg-base: #fff;
+  --color-bg-dark: #061224;
+  --color-bg-light: #deeefc;
+  --color-bg-light-secondary: #d8f1f0;
+
+  // color-border
+  --color-border: #1064e5;
+
+  // colors button
+  --color-btn-base: #1064e5;
+  --color-btn-secondary: #fff;
+  --color-btn-active: #0046b0;
+  --color-btn-text: #fff;
+  --color-btn-text-secondary: #1064e5;
+
+  // color-input
+  --color-input-border: #1064e5;
+  --color-input-text: #000;
+}

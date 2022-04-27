@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+title: "Главная"
+})
+
+<body class="page__body page__body--bg-light">
+  @include('partials/header.html')
+  <main class="main">
+    @include('partials/promo.html')
+    @include('partials/benefits.html')
+    @include('partials/description.html')
+    @include('partials/tariffs.html')
+    @include('partials/doc-count.html')
+    @include('partials/clients.html')
+    @include('partials/posts.html')
+    @include('partials/section-video.html')
+    @include('partials/section-faq.html')
+    @include('partials/subscription.html')
+  </main>
+  @include('partials/footer.html')
+</body>
+
+</html>

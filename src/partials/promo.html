@@ -1,0 +1,80 @@
+<section class="promo">
+  <div class="promo__slider swiper">
+    <div class="container">
+      <div class="promo__header">
+        <h2 class="promo__heading">Цифровой документооборот<br> в три этапа:</h2>
+        <div class="swiper-pagination-number"></div>
+      </div>
+    </div>
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="promo__item container">
+          @include('template/picture.html', {
+          'pathImg': './img/hero/box1',
+          'imgType': 'png',
+          'classImgName': 'promo__img',
+          'width': '227',
+          'height': '330',
+          'alt': '',
+          'tablet': '576',
+          'desktop': '',
+          })
+          <h3 class="promo__title">Быстрая регистрация</h3>
+          <p class="promo__text">
+            Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000
+            подписей документов в подарок!
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="promo__item container">
+          @include('template/picture.html', {
+          'pathImg': './img/hero/box2',
+          'imgType': 'png',
+          'classImgName': 'promo__img',
+          'width': '227',
+          'height': '330',
+          'alt': '',
+          'tablet': '576',
+          'desktop': '',
+          })
+          <h3 class="promo__title">Загрузи документ</h3>
+          <p class="promo__text">
+            Загружай в систему любой документ которые надо подписать, договор, акт выполненных работ, да что угодно
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="promo__item container">
+          @include('template/picture.html', {
+          'pathImg': './img/hero/box3',
+          'imgType': 'png',
+          'classImgName': 'promo__img',
+          'width': '227',
+          'height': '330',
+          'alt': '',
+          'tablet': '576',
+          'desktop': '',
+          })
+          <h3 class="promo__title">Подпиши и отправь</h3>
+          <p class="promo__text">
+            Подписывай своей электронно-цифровой подписью и за долю секунды отправь партнеру или компании. Он
+            подписывает в ответ и все! Готово!
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="promo__footer">
+      <div class="container">
+        <button class="promo__btn btn">Попробовать Бесплатно</button>
+        <div class="swiper-pagination-circle"></div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</section>

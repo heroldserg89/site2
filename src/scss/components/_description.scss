@@ -1,0 +1,173 @@
+.description {
+  padding-top: 22px;
+  padding-bottom: 58px;
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 44px;
+  }
+
+  @include desktop {
+    padding-top: 57px;
+    padding-bottom: 97px;
+  }
+}
+
+.description__wrapper {
+  overflow: hidden;
+}
+
+.description__block {
+  display: grid;
+  row-gap: 31px;
+
+  @include tablet {
+    position: relative;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &--right {
+    .description__img-wrapper {
+      @include tablet {
+        order: -1;
+      }
+
+      @include desktop {
+        grid-column: 6 span;
+      }
+    }
+
+    .description__img {
+      @include tablet {
+        right: 0;
+        left: auto;
+      }
+    }
+
+    .description__info {
+      @include desktop {
+        grid-column: 8 / -1;
+      }
+    }
+  }
+
+  & + & {
+    margin-top: 53px;
+
+    @include tablet {
+      margin-top: 60px;
+    }
+  }
+}
+
+.description__info {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    grid-column: 5 span;
+  }
+}
+
+.description__img-wrapper {
+  // width: 100%;
+
+  @include tablet {
+    position: relative;
+    grid-column: 3 span;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    grid-column: 7 / -1;
+  }
+
+  &--right {
+
+  }
+}
+
+.description__img {
+  width: 100%;
+
+  @include tablet {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: auto;
+    min-width: 500px;
+    transform: translateY(-50%);
+  }
+
+  @include desktop {
+    position: static;
+    transform: translateY(0);
+  }
+}
+
+.description__title {
+  margin-bottom: 12px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 18px;
+  }
+}
+
+.description__list {
+  display: grid;
+  margin-bottom: 31px;
+  row-gap: 6px;
+
+  @include tablet {
+    margin-bottom: 25px;
+    row-gap: 8px;
+  }
+
+  @include desktop {
+    margin-bottom: 38px;
+    row-gap: 10px;
+  }
+}
+
+.description__item {
+  position: relative;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 130%;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+
+  &::before {
+    content: "-";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.description__btn {
+  align-self: center;
+  min-width: 217px;
+
+  @include tablet {
+    align-self: start;
+  }
+}

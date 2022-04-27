@@ -1,0 +1,15 @@
+<picture>
+  @if (desktop) {
+  <source media="(min-width:@desktoppx)" srcset="@pathImg-desktop.webp,  @pathImg-desktop@2x.webp 2x" type="image/webp">
+  <source media="(min-width:@desktoppx)" srcset="@pathImg-desktop.@imgType,  @pathImg-desktop@2x.@imgType 2x"
+    type="image/@if(imgType === 'jpg'){jpeg}@if(imgType !== 'jpg'){@imgType})">
+  }
+  @if (tablet) {
+  <source media="(min-width:@tabletpx)" srcset="@pathImg-tablet.webp,  @pathImg-tablet@2x.webp 2x" type="image/webp">
+  <source media="(min-width:@tabletpx)" srcset="@pathImg-tablet.@imgType,  @pathImg-tablet@2x.@imgType 2x"
+    type="image/@if(imgType === 'jpg'){jpeg}@if(imgType !== 'jpg'){@imgType})">
+  }
+  <source srcset="@pathImg.webp, @pathImg@2x.webp 2x" type="image/webp">
+  <img class="@classImgName" src="@pathImg.@imgType" srcset="@pathImg@2x.@imgType" width="@width" height="@height"
+    alt="@alt" loading="lazy">
+</picture>

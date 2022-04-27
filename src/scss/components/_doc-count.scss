@@ -1,0 +1,51 @@
+.doc-count {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.doc-count__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.doc-count__inner {
+
+}
+
+.doc-count__title {
+  margin-bottom: 10px;
+}
+
+.doc-count__value {
+  display: block;
+  margin-bottom: 10px;
+  font-family: $font-family;
+  font-size: 36px;
+  line-height: 1;
+
+  @include tablet {
+    font-size: 56px;
+  }
+
+  @include desktop {
+    font-size: 73px;
+  }
+}
+
+.doc-count__desc {
+  margin: 0;
+  max-width: 478px;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @include desktop {
+    line-height: 28px;
+  }
+}

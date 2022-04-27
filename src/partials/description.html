@@ -1,0 +1,69 @@
+<section class="description">
+  <h2 class="visually-hidden">О продукте</h2>
+  <div class="description__wrapper container">
+    <div class="description__block">
+      <div class="description__info">
+        <h3 class="description__title title-section">Комфорт в работе</h3>
+        <ul class="description__list list-reset">
+          <li class="description__item">
+            Создавай документы по твоим личным привычным шаблонам. Это индивидуально!
+          </li>
+          <li class="description__item">
+            Настраивай порядок подписание документа, если вас несколько человек. Это ответственно!
+          </li>
+          <li class="description__item">
+            Загружай XML файл с собственным шаблоном готового документа. Это удобно!
+          </li>
+          <li class="description__item">
+            Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!
+          </li>
+        </ul>
+        <button class="description__btn btn btn--fill">Узнать больше</button>
+      </div>
+      <div class="description__img-wrapper">
+        @include('template/picture.html', {
+        'pathImg': './img/description/img1',
+        'imgType': 'jpg',
+        'classImgName': 'description__img',
+        'width': '280',
+        'height': '159',
+        'alt': '',
+        'tablet': '576',
+        'desktop': '',
+        })
+      </div>
+    </div>
+    <div class="description__block description__block--right">
+      <div class="description__info description__info">
+        <h3 class="description__title title-section">Наш продукт это:</h3>
+        <ul class="description__list list-reset">
+          <li class="description__item">
+            Web версия без установки программного обеспечения
+          </li>
+          <li class="description__item">
+            Возможность бесплатно и безлимитно обрабатывать входящие документы
+          </li>
+          <li class="description__item">
+            Простота интеграции с 1С и другими сервисами
+          </li>
+          <li class="description__item">
+            Поддержка входа через Mobile ID
+          </li>
+        </ul>
+        <button class="description__btn btn">Зарегистрироватся</button>
+      </div>
+      <div class="description__img-wrapper description__img-wrapper">
+        @include('template/picture.html', {
+        'pathImg': './img/description/img1',
+        'imgType': 'jpg',
+        'classImgName': 'description__img',
+        'width': '280',
+        'height': '159',
+        'alt': '',
+        'tablet': '576',
+        'desktop': '',
+        })
+      </div>
+    </div>
+  </div>
+</section>

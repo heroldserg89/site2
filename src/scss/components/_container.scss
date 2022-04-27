@@ -1,0 +1,13 @@
+.container {
+  --content-width: 1230px;
+  --container-offset: 20px;
+  --container-width: calc(var(--container-offset) * 2 + var(--content-width));
+
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+
+  @include tablet {
+    --container-offset: 50px;
+  }
+}

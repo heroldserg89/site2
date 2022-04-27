@@ -1,0 +1,190 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-dark);
+
+  @include tablet {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-weight: 500;
+  }
+
+  @include desktop {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  a {
+    @include hover {
+      color: var(--color-text-hover);
+    }
+  }
+}
+
+.footer__wrapper {
+  @include tablet {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    margin-bottom: 27px;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.footer__logo {
+  @include tablet {
+    grid-column: 2 span;
+  }
+
+  @include desktop {
+    grid-column: 3 span;
+  }
+}
+
+.footer__lists {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+
+  @include tablet {
+    grid-column: 2 span;
+    grid-template-columns: auto;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    grid-column: 4 span;
+    row-gap: 37px;
+  }
+}
+
+.footer__menu {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer__user-menu {
+}
+
+.footer__contact {
+  @include small-tablet {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include tablet {
+    align-self: stretch;
+    grid-column: 3 span;
+    grid-template-columns: auto;
+  }
+
+  @include desktop {
+    // align-self: start;
+    grid-column: 5 span;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer__email {
+  display: block;
+  margin-bottom: 30px;
+  color: inherit;
+
+  @include tablet {
+    line-height: 43px;
+  }
+
+  @include desktop {
+    margin: 0;
+    line-height: 24px;
+  }
+}
+
+.footer__facebook {
+  display: block;
+  margin-bottom: 30px;
+  color: inherit;
+
+  @include desktop {
+    margin: 0;
+  }
+}
+
+.footer__contact-inner {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.footer__address {
+  margin-bottom: 10px;
+  font-style: normal;
+}
+
+.footer__phones {
+
+}
+
+.footer__phones-item {
+  & + & {
+    margin-top: 5px;
+  }
+}
+
+.footer__phones-link {
+  color: inherit;
+}
+
+.footer__bottom {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.4;
+
+  @include tablet {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.footer__offer {
+  color: inherit;
+}
+
+.footer__security {
+  color: inherit;
+}
+
+.footer__copyright {
+  margin: 0;
+}
+
+.menu-footer {
+}
+
+.menu-footer__item {
+}
+
+.menu-footer__link {
+  line-height: 43px;
+  color: inherit;
+
+  @include desktop {
+    line-height: 24px;
+  }
+}

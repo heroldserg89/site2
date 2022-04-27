@@ -1,0 +1,32 @@
+.clients {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--color-bg-base);
+}
+
+.clients__wrapper {
+}
+
+.clients__title {
+  margin-bottom: 25px;
+}
+
+.clients__slider {
+}
+
+.clients__list {
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.clients__item {
+  display: flex;
+  justify-content: center;
+}
+
+.clients__img {
+  @include tablet {
+    width: 100%;
+    height: auto;
+  }
+}
